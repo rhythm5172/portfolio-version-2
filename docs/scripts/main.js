@@ -1,45 +1,30 @@
-(function($) {
-  "use strict"; // Start of use strict
-
-  // Smooth scrolling using jQuery easing
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-    
-    
-$(function() {
-    $('a.js-scroll-trigger').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
+$(document).ready(function () {
+  $('a').click(function (e) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+        window.location.hash = hash;
+      });
+    }
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
-  });
+  $(window).scroll(function(){
 
-  // Collapse Navbar
-  var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-light");
     } else {
       $("#mainNav").removeClass("navbar-light");
     }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
 
- 
 
-})(jQuery); // End of use strict
+  });
+
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+});
+
