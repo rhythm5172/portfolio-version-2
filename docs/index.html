@@ -2,49 +2,77 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block">
-                <!-- hidden spacer to center brand on mobile --></span>
-            <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body id="page-top">
+    <!-- NAVBAR
+    ================================================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-togglable  fixed-top " id="mainNav">
+        <div class="container">
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-bar">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects">
+                            Projects
+                        </a>
+                    </li>          
+                    <li class="nav-item ">
+                        <a class="nav-link js-scroll-trigger" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
             </div>
+            <!-- / .navbar-collapse -->
         </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-right">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
+        <!-- / .container -->
     </nav>
-    <div class="masthead">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
-                    <p class="text-white text-uppercase text-center text-xs">
-                        Meet <span>Jen Barrera</span>
+<!-- HERO
+    ================================================== -->
+    <section class="section section-top section-full">
+
+        <!-- Cover -->
+        <div class="bg-cover" style="background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');"></div>
+
+        <!-- Overlay -->
+        <div class="bg-overlay"></div>
+        <!-- Content -->
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-10 col-lg-7 ">
+                    <div class="banner-content">
+                        <!-- Preheading -->
+                        <p class="text-white text-uppercase text-center text-xs">
+                            Meet <span>Jen Barrera</span>
+                        </p>
 
                         <!-- Heading -->
                         <h1 class="text-white text-center mb-4 display-4 font-weight-bold">
@@ -57,26 +85,38 @@
                         </p>
 
                         <!-- Button -->
-                        <p class="text-center mb-0">
+                        <p class="text-center mb-0" >
                             <a href="#" target="_blank" class="btn btn-primary ">
                                 Contact Now
                             </a>
                         </p>
-                    </p>
+                    </div>
                 </div>
             </div>
+            <!-- / .row -->
         </div>
-    </div>
+        <!-- / .container -->
+    </section>
     <!-- SKILLS
     ================================================== -->
     <section class="section" id="skills">
         <div class="container">
-            <div class="col-md-5 mx-auto my-5 text-center">
-                <h3 class="font-weight-normal">Skills</h3>
-                <p class="mb-5 ">
-                    These are some of the technologies,languages and libraries I used in some of my projects.
-                </p>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8 col-lg-6 text-center">
+
+                    <!-- Heading -->
+                    <h2 class="lg-title">
+                        Skills
+                    </h2>
+
+                    <!-- Subheading -->
+                    <p class="mb-5 ">
+                        These are some of the technologies,languages and libraries I used in some of my projects.
+                    </p>
+
+                </div>
             </div>
+            <!-- / .row -->
 
             <div class="row justy-content-center">
                 <div class="col-xs-6 col-md-2">
@@ -84,7 +124,7 @@
                         <div class="feature-icon-block mb-4">
                             <i class="fab fa-html5"></i>
                         </div>
-                        <h5>HTML</h5>
+                        <h4 class="mb-3 ">HTML</h4>
                     </div>
                 </div>
 
@@ -133,9 +173,10 @@
                     </div>
                 </div>
 
-
+                
             </div>
         </div>
+        <!-- / .container -->
     </section>
 
     
@@ -144,11 +185,11 @@
     
      <!-- PROJECTS
     ================================================== -->
-    <section class="section bg-light" id="projects">
+    <section class="section  bg-light" id="projects" style="border: beige;">
         <div class="container">
-            <div class="row ">
+            <div class="row mt-5 align-items-center ">
                 
-                <div class="col-lg-6">
+                <div class="col-md-5 mx-auto my-5">
                     <div class="about-img">
                         <img src="https://i.ibb.co/HzJ3cT0/pcaarrd.png" alt="" class="img-fluid">
                     </div>
@@ -199,8 +240,129 @@
     <!-- PROJECTS
     ================================================== -->
 
+ <!-- CONTACT
+    ================================================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="row mt-5 align-items-center ">
+            <!-- <div class="row justify-content-center mb-4"> -->
+                <div class="col-md-8 col-lg-8 text-center">
 
+                    <!-- Heading -->
+                    <div class="col-12 text-center">
+                        <h3 class="font-weight-normal">Have any questions on mind?</h3>
+                    </div>
+
+                </div>
+            </div>
+            <!-- / .row -->
+
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="mailto:rhythm5172@gmail.com" method="post" enctype="text/plain">
+                        <!-- form message -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                        Your message was sent successfully.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end message -->
+                            
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" name="email" id="email" class="form-control" placeholder="Enter your Email *" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter your Subject *" required="required">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" cols="30" rows="6" class="form-control" placeholder="Enter your Message" required="required" ></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="submit text-center">
+                                    <input name="submit" type="submit" class="btn btn-primary btn-lg" value="Submit Now">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- CONTACT
+    ================================================== -->
+
+       <!-- FOOTER
+    ================================================== -->
+    <footer class="top-padding bg-dark">
+        <!--Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="footer-widget">
+                        <!-- Brand -->
+                        <a href="#" class="footer-brand text-white">
+                            Want to collaborate?
+                        </a>
+                        <p>I’m always open to discussing product design work or partnership opportunities.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6">
+
+                    <!-- Links -->
+                    <ul class="footer-link list-unstyled ml-0 justify-content-end">
+                        <li>
+                            <i class="fa fa-mobile"></i> +639771815144
+                        </li>
+                        <li>
+                            <i class="fa fa-location-arrow"></i> Mandaluyong, Philippines
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i> rhythm5172@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / .row -->
+
+            <div class="row justify-content-md-center footer-copy">
+                <div class="col-lg-8 col-md-6 col-sm-6 text-center">
+                    <p class="lead text-white-50"> Hand crafted by Jen 😊&copy;  2020 </p>
+                </div>
+            </div>
+        </div>
+        <!-- / .container -->
+    </footer>
 
 </body>
 
 </html>
+<!-- 
+<script>
+
+
+$(document).ready(function () {
+
+
+});
+</script> -->
